@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>RUBY DETAILS</title>
+    <STYle>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .imagen-fondo{
+            position: fixed;
+              top: 0;
+             left: 0;
+            width: 100%;
+            height: 120%;
+            object-fit: cover;
+            object-position: center center; /* CENTRADO COMPLETO */
+            z-index: -1;
+        }
+        .capa-negra {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Ajustá la opacidad */
+      pointer-events: none; /* Evita que bloquee clics si hay algo encima */
+       }
+       .titulo {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    }
+    .boton-link {
+      position: absolute;
+      top: 60%;
+      left: 45.5%;
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 10px 50px;
+      font-size:20px;
+      border-radius:60PX;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .boton-link:hover {
+      background-color: black;
+      color: white;
+    }
+     header {
+      background-color: #000; /* fondo negro */
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+      align-items: center;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    header a:hover {
+      color: #1DB954; /* verde tipo Spotify */
+    }
+    </STYle>
+
+    <body>
+        <img class="imagen-fondo" src="jeeenie.jpg">
+         <div class="capa-negra"></div>
+        <h1 class="titulo">JENNIE'S FIRST ALBUM <br> RUBY</h1>
+         <button class="boton-link">Link</button>
+           <header>
+         <a href="https://open.spotify.com/" target="_blank">Spotify</a>
+         <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+         <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+         </header>
+    </body>
+
+</head>
+</html>
