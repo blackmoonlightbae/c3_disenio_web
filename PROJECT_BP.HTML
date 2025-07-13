@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>BLACKPINK</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: whitesmoke;
+    }
+
+    .encabezado {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 20px;
+      background-color: whitesmoke;
+    }
+
+    .logo {
+      position: absolute;
+      left: 20px;
+      height: 60px;
+    }
+
+    .redes {
+      position: absolute;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .redes img {
+      height: 30px;
+      width: 30px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .redes img:hover {
+      transform: scale(1.1);
+    }
+
+    .titulo {
+      text-align: center;
+      font-size: 3em;
+      font-weight: bold;
+      color: black;
+      margin: 0 80px;
+    }
+
+    .contenedor {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contenedor img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      object-fit: cover;
+    }
+
+    .seccion-negra {
+      background-color: black;
+      color: white;
+      min-height: 100vh;
+      text-align: center;
+      padding: 50px 20px;
+      margin-top: 0;
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .logoabajo {
+  margin: 20px 0;
+  width: 150px; /* o el tamaño que desees */
+}
+    .seccion-negra video {
+      width: 80%;
+      max-width: 600px;
+      height: auto;
+      display: block;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    .pie-pagina {
+      background-color: pink;
+      color: black;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9em;
+      font-family: Arial, sans-serif;
+      border-top: 1px solid #e1a4b6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="encabezado">
+    <img src="unnamed.webp" alt="Logo BLACKPINK" class="logo">
+    <div class="titulo">BLACKPINK</div>
+    <div class="redes">
+      <a href="https://open.spotify.com/intl-es/album/3hzoZlx2KwtvJEUl9piPWr?si=_5Siq2F1QrS9AiRRee1xyg" target="_blank">
+        <img src="SPOTIFY.png" alt="Spotify" />
+      </a>
+      <a href="https://youtu.be/CgCVZdcKcqY?si=YjzSZrrel-SR3WqX" target="_blank">
+        <img src="YOUTUBE.png" alt="YouTube" />
+      </a>
+      <a href="https://www.instagram.com/blackpinkofficial/" target="_blank">
+        <img src="INSTA.png" alt="Instagram" />
+      </a>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <img src="BP-jump.webp" alt="BLACKPINK" />
+  </div>
+
+  <div class="seccion-negra">
+  <h1>BLACKPINK IN YOUR AREA</h1>
+  <img class="logoabajo" src="jump-bp-bajo.jpg" alt="Logo BLACKPINK inferior">
+  <h2>STREAM NOW</h2>
+  <video controls loop muted autoplay poster="ruta/a/poster-video.jpg">
+    <source src="BLACKPINK - 뛰어 Jump (Live from Deadline World Tour) 4K - VENOM Presents (1080p, h264).mp4" type="video/mp4">
+  </video>
+</div>
+
+  <footer class="pie-pagina">
+    <p>
+      All contents of YG Entertainment are protected by copyright.<br>
+      ⓒYG Entertainment ALL RIGHTS RESERVED
+    </p>
+  </footer>
+
+</body>
+</html>
