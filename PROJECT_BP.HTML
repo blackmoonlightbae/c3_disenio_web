@@ -2,108 +2,164 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Perfil del Artista</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLACKPINK</title>
   <style>
-    html, body {
+    * {
       margin: 0;
       padding: 0;
-      height: 100%;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffffff;
-      color: #333;
+      box-sizing: border-box;
     }
 
     body {
-      display: flex;
-      flex-direction: column;
+      font-family: Arial, sans-serif;
     }
 
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px 40px;
-      border-bottom: 2px solid #e0e0e0;
-      position: relative;
+    .logo-fijo {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
     }
 
-    .logo {
+    .logo-fijo img {
       height: 60px;
+      width: auto;
     }
 
-    .nombre-artista {
+    .video-fondo {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .video-fondo video {
       position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+
+    .contenido-principal {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+    }
+
+    .botones {
+      position: absolute;
+      bottom: 40px;
       left: 50%;
       transform: translateX(-50%);
-      font-size: 2em;
-      font-weight: bold;
-    }
-
-    .contenido {
-      flex: 1;
       display: flex;
-      padding: 40px;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .fila-doble {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
       justify-content: center;
-      gap: 40px;
     }
 
-    .foto-artista {
-      width: 300px;
-      height: 500px;
-      object-fit: cover;
-      border-radius: 10px;
-      border: 3px solid #ccc;
-    }
-
-    .bio {
-      max-width: 600px;
-      font-size: 1.1em;
-      line-height: 1.6;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #f4f4f4;
-      border-top: 2px solid #e0e0e0;
-    }
-
-    .redes a {
-      margin: 0 15px;
+    .boton {
+      padding: 14px 32px;
+      width: 280px;
+      border: 2px solid white;
+      border-radius: 30px;
+      background-color: transparent;
+      color: white;
       text-decoration: none;
-      color: #000;
+      font-style: italic;
+      text-transform: uppercase;
       font-weight: bold;
-      font-size: 1em;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+      text-align: center;
     }
 
-    .redes a:hover {
-      color: #007acc;
+    .boton:hover {
+      background-color: white;
+      color: black;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="logo-empresa.png" alt="Logo de la empresa" class="logo" />
-    <div class="nombre-artista">Roseanne Park</div>
-  </header>
+  <div class="logo-fijo">
+    <img src="BP/YG_Entertainment_Logo.svg.png" alt="Logo de Mi Local" />
+  </div>
 
-  <main class="contenido">
-    <img src="rose-vertical.jpg" alt="Foto del artista" class="foto-artista" />
-    <div class="bio">
-      <p><strong>Roseanne Park</strong>, conocida como Rosé, es una cantante y compositora neozelandesa-sudcoreana, integrante del grupo BLACKPINK. Destaca por su voz emotiva y estilo único.</p>
-      <p>Debutó en 2016 con BLACKPINK y rápidamente se ganó el cariño del público mundial. Además de su trabajo en el grupo, ha desarrollado una exitosa carrera solista con álbumes y sencillos reconocidos internacionalmente.</p>
+  <div class="video-fondo">
+    <video autoplay muted loop playsinline>
+      <source src="BP/JENNIE.mp4" type="video/mp4" />
+    </video>
+    <div class="contenido-principal">
+      <div class="botones">
+        <div class="fila-doble">
+          <a href="JENNIE.HTML" class="boton">JENNIE</a>
+          <a href="https://tu-link-2.com" class="boton">STREAM</a>
+        </div>
+        <a href="https://youtu.be/JSFG-IE8n_c?si=usCRgytO6afWu2BA" class="boton">Watch the 'Like Jennie' Music Video Now</a>
+        <a href="https://youtu.be/seARsMwjbEU?si=kSxCBNEGMJ9zY-yz" class="boton">Watch the 'Handlebars' Music Video Now</a>
+      </div>
     </div>
-  </main>
+  </div>
 
-  <footer>
-    <div class="redes">
-      <a href="https://instagram.com/roses_are_rosie" target="_blank">Instagram</a>
-      <a href="https://twitter.com/roses_are_rosie" target="_blank">Twitter</a>
-      <a href="https://www.youtube.com/@RoseOfficial" target="_blank">YouTube</a>
+  <div class="video-fondo">
+    <video autoplay muted loop playsinline>
+      <source src="BP/rockstar.mp4" type="video/mp4" />
+    </video>
+    <div class="contenido-principal">
+      <div class="botones">
+        <div class="fila-doble">
+          <a href="LISA.HTML" class="boton">LISA</a>
+          <a href="L" class="boton">STREAM</a>
+        </div>
+        <a href="https://youtu.be/UxXY_hR_wzo?si=dLa_jQ7exuEoyVjM" class="boton">Watch the 'New Woman' Music Video Now</a>
+        <a href="https://youtu.be/hbcGx4MGUMg?si=gyZA6SzLfzpxlSH-" class="boton">Watch the 'Rockstar' Music Video Now</a>
+      </div>
     </div>
-  </footer>
+  </div>
 
-</body>
-</html>
+
+  <div class="video-fondo">
+    <video autoplay muted loop playsinline>
+      <source src="BP/ttte.mp4" type="video/mp4" />
+    </video>
+    <div class="contenido-principal">
+      <div class="botones">
+        <div class="fila-doble">
+          <a href="ROSE.HTML" class="boton">ROSE</a>
+          <a href="#" class="boton">STREAM</a>
+        </div>
+        <a href="https://youtu.be/ekr2nIex040?si=fwD9qKdf7KfW42g7" class="boton">Watch the 'APT.' Music Video Now</a>
+        <a href="https://youtu.be/eA0lHNZ1KCA?si=_x19vivdEQ4cP9CJ" class="boton">Watch the 'Toxic till the end' Music Video Now </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-fondo">
+    <video autoplay muted loop playsinline>
+      <source src="BP/JISOO.mp4" type="video/mp4" />
+    </video>
+    <div class="contenido-principal">
+      <div class="botones">
+        <div class="fila-doble">
+          <a href="JISOO.HTML" class="boton">JISOO</a>
+          <a href="#" class="boton">STREAM</a>
+        </div>
+        <a href="https://youtu.be/ekr2nIex040?si=fwD9qKdf7KfW42g7" class="boton">Watch the 'EARTHQUARE' Music Video Now</a>
+        <a href="https://youtu.be/eA0lHNZ1KCA?si=_x19vivdEQ4cP9CJ" class="boton">Watch the 'Flower' Music Video Now </a>
+      </div>
+    </div>
+  </div>
