@@ -2,144 +2,107 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>BLACKPINK</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil del Artista</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      background-color: whitesmoke;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #333;
     }
 
-    .encabezado {
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      border-bottom: 2px solid #e0e0e0;
       position: relative;
-      padding: 20px;
-      background-color: whitesmoke;
     }
 
     .logo {
-      position: absolute;
-      left: 20px;
       height: 60px;
     }
 
-    .redes {
+    .nombre-artista {
       position: absolute;
-      right: 20px;
-      display: flex;
-      gap: 10px;
-    }
-
-    .redes img {
-      height: 30px;
-      width: 30px;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
-
-    .redes img:hover {
-      transform: scale(1.1);
-    }
-
-    .titulo {
-      text-align: center;
-      font-size: 3em;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2em;
       font-weight: bold;
-      color: black;
-      margin: 0 80px;
     }
 
-    .contenedor {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    .contenedor img {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: 0;
-      padding: 0;
-      object-fit: cover;
-    }
-
-    .seccion-negra {
-      background-color: black;
-      color: white;
-      min-height: 100vh;
-      text-align: center;
-      padding: 50px 20px;
-      margin-top: 0;
-      box-sizing: border-box;
-      width: 100%;
+    .contenido {
+      flex: 1;
       display: flex;
-      flex-direction: column;
+      padding: 40px;
       justify-content: center;
-      align-items: center;
-    }
-    .logoabajo {
-  margin: 20px 0;
-  width: 150px; /* o el tamaño que desees */
-}
-    .seccion-negra video {
-      width: 80%;
-      max-width: 600px;
-      height: auto;
-      display: block;
-      margin-top: 20px;
-      border-radius: 8px;
+      gap: 40px;
     }
 
-    .pie-pagina {
-      background-color: pink;
-      color: black;
+    .foto-artista {
+      width: 300px;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid #ccc;
+    }
+
+    .bio {
+      max-width: 600px;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    footer {
       text-align: center;
-      padding: 20px 10px;
-      font-size: 0.9em;
-      font-family: Arial, sans-serif;
-      border-top: 1px solid #e1a4b6;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border-top: 2px solid #e0e0e0;
+    }
+
+    .redes a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    .redes a:hover {
+      color: #007acc;
     }
   </style>
 </head>
 <body>
 
-  <div class="encabezado">
-    <img src="unnamed.webp" alt="Logo BLACKPINK" class="logo">
-    <div class="titulo">BLACKPINK</div>
-    <div class="redes">
-      <a href="https://open.spotify.com/intl-es/album/3hzoZlx2KwtvJEUl9piPWr?si=_5Siq2F1QrS9AiRRee1xyg" target="_blank">
-        <img src="SPOTIFY.png" alt="Spotify" />
-      </a>
-      <a href="https://youtu.be/CgCVZdcKcqY?si=YjzSZrrel-SR3WqX" target="_blank">
-        <img src="YOUTUBE.png" alt="YouTube" />
-      </a>
-      <a href="https://www.instagram.com/blackpinkofficial/" target="_blank">
-        <img src="INSTA.png" alt="Instagram" />
-      </a>
+  <header>
+    <img src="logo-empresa.png" alt="Logo de la empresa" class="logo" />
+    <div class="nombre-artista">Roseanne Park</div>
+  </header>
+
+  <main class="contenido">
+    <img src="rose-vertical.jpg" alt="Foto del artista" class="foto-artista" />
+    <div class="bio">
+      <p><strong>Roseanne Park</strong>, conocida como Rosé, es una cantante y compositora neozelandesa-sudcoreana, integrante del grupo BLACKPINK. Destaca por su voz emotiva y estilo único.</p>
+      <p>Debutó en 2016 con BLACKPINK y rápidamente se ganó el cariño del público mundial. Además de su trabajo en el grupo, ha desarrollado una exitosa carrera solista con álbumes y sencillos reconocidos internacionalmente.</p>
     </div>
-  </div>
+  </main>
 
-  <div class="contenedor">
-    <img src="BP-jump.webp" alt="BLACKPINK" />
-  </div>
-
-  <div class="seccion-negra">
-  <h1>BLACKPINK IN YOUR AREA</h1>
-  <img class="logoabajo" src="jump-bp-bajo.jpg" alt="Logo BLACKPINK inferior">
-  <h2>STREAM NOW</h2>
-  <video controls loop muted autoplay poster="ruta/a/poster-video.jpg">
-    <source src="BLACKPINK - 뛰어 Jump (Live from Deadline World Tour) 4K - VENOM Presents (1080p, h264).mp4" type="video/mp4">
-  </video>
-</div>
-
-  <footer class="pie-pagina">
-    <p>
-      All contents of YG Entertainment are protected by copyright.<br>
-      ⓒYG Entertainment ALL RIGHTS RESERVED
-    </p>
+  <footer>
+    <div class="redes">
+      <a href="https://instagram.com/roses_are_rosie" target="_blank">Instagram</a>
+      <a href="https://twitter.com/roses_are_rosie" target="_blank">Twitter</a>
+      <a href="https://www.youtube.com/@RoseOfficial" target="_blank">YouTube</a>
+    </div>
   </footer>
 
 </body>
